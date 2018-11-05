@@ -1,0 +1,61 @@
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";
+
+
+$--T-color:red;
+$--T-hover-color:brown;
+$--T-active-color:yellow;
+$--bg-color:#3c3c3c;
+$--Bg-hover-color:gray;
+
+
+//menu 下拉式選單
+.el-menu--horizontal {
+    .el-menu-item:not(.is-disabled) {
+
+        &:focus,
+        &:hover {
+            // 選單 :focus &:hover
+            background: $--Bg-hover-color;
+            color: $--T-color;
+        }
+
+        &:active>a {
+            //底下選擇的顏色
+            color: $--T-active-color;
+        }
+    }
+
+    .el-menu {
+
+        .el-menu-item,
+        .el-submenu__title {
+            //下拉式選單 Lv1
+            padding: 5px 35px;
+            background: $--bg-color;
+
+        }
+    }
+
+    .el-submenu {
+        .el-submenu__title {
+            //下拉式選單的標題
+            color: $--T-color;
+
+            &:hover,
+            &:focus {
+                background: $--bg-color;
+                color: $--T-color;
+            }
+        }
+
+        &:focus .el-submenu__title,
+        &:hover .el-submenu__title {
+            background: $--bg-color;
+            color: $--T-color;
+        }
+    }
+}
+
+//menu rwd
