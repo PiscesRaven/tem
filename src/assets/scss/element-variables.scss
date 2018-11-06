@@ -3,22 +3,29 @@ $--font-path: '~element-ui/lib/theme-chalk/fonts';
 @import "~element-ui/packages/theme-chalk/src/index";
 
 
-$--T-color:red;
+$--T-color:#ffd033;
 $--T-hover-color:brown;
 $--T-active-color:yellow;
 $--bg-color:#3c3c3c;
-$--Bg-hover-color:gray;
+$--Bg-hover-color:#77cec0;
 
+$maincolor:#77cec0;
+$hovercolor:#ffd033;
+$maintxtcolor:#fff;
+$subtxtcolor:#333;
+$submaincolor:#f4f1eb;
 
 //menu 下拉式選單
 .el-menu--horizontal {
     .el-menu-item:not(.is-disabled) {
+
 
         &:focus,
         &:hover {
             // 選單 :focus &:hover
             background: $--Bg-hover-color;
             color: $--T-color;
+            border-bottom: 2px white solid;
         }
 
         &:active>a {
@@ -34,7 +41,6 @@ $--Bg-hover-color:gray;
             //下拉式選單 Lv1
             padding: 5px 35px;
             background: $--bg-color;
-
         }
     }
 
@@ -47,6 +53,7 @@ $--Bg-hover-color:gray;
             &:focus {
                 background: $--bg-color;
                 color: $--T-color;
+
             }
         }
 
