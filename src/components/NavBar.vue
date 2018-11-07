@@ -7,10 +7,16 @@
         <el-menu-item id="logo" class="hidden-sm-and-down"><img src="../../public/img/0819-LOGO.png" alt=""></el-menu-item>
         <el-menu-item index="1">
           <router-link to="/aboutus">關於我們</router-link>
+        </el-menu-item>
+        <el-menu-item index="2" >
+          <router-link to="/course">課程內容</router-link>
+        </el-menu-item>
+        <el-menu-item index="3" >
+          <router-link to="/device">硬體設備</router-link>
           </el-menu-item>
-        <el-menu-item index="2" >課程內容</el-menu-item>
-        <el-menu-item index="3" >硬體設備</el-menu-item>
-        <el-menu-item index="4" >最新消息</el-menu-item>
+        <el-menu-item index="4" >
+           <router-link to="/news">最新消息</router-link>
+        </el-menu-item>
         <el-menu-item index="5" >活動照片</el-menu-item>
         <el-menu-item index="6" >預約參觀</el-menu-item>
         <!-- <el-submenu index="2">
@@ -96,16 +102,15 @@ export default {
         // margin: 15px;
         line-height: 80px;
         color: $mainfontcolor;
-        &:hover {
-          border-bottom: 2px white solid !important;
+        &:nth-last-child(-n + 7) {
+          &:hover {
+            border-bottom: 2px white solid !important;
+          }
         }
       }
       #logo {
         margin-right: 5px;
         margin-left: 20%;
-        &:hover {
-          border-bottom: none;
-        }
       }
       .nav-info {
         float: left;

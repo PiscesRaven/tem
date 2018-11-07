@@ -242,7 +242,6 @@ export default {
       background-color: #d3dce6;
     }
   }
-  margin-top: 70px;
   .el-main {
     padding: 0;
     .el-container {

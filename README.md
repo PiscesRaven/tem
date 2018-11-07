@@ -24,5 +24,4 @@ npm run test
 ```
 npm run lint
 
-555
 ```

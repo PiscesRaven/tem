@@ -1,10 +1,26 @@
 <template>
   <div id="app">
+    <NavBar></NavBar>
     <router-view/>
-
+    <FooterView></FooterView>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import NavBar from "@/components/NavBar.vue";
+import FooterView from "@/components/FooterView.vue";
+require("vue-image-lightbox/dist/vue-image-lightbox.min.css");
+export default {
+  name: "home",
+  components: {
+    NavBar,
+    FooterView
+  }
+};
+</script>
 <style lang="scss">
+// @import "@/assets/scss/global.scss"; // 全域css
 a {
   text-decoration: none;
 }
@@ -20,6 +36,7 @@ img {
   text-align: center;
   color: #2c3e50;
   min-height: 100%;
+  padding-top: 90px;
 }
 
 html,

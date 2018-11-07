@@ -2,8 +2,8 @@
     <!-- 關於我們 -->
 <div id="about-page">
 
-    <el-comtainer class="hgroup">
-      <el-row>
+    <el-container >
+      <el-row class="hgroup">
         <el-col>
           <h1 class="about-page-title">關於我們</h1>
           <!-- 麵包屑 -->
@@ -15,7 +15,7 @@
           </div>
           </el-col>
         </el-row>
-      </el-comtainer>
+      </el-container>
 
 
   <el-container>
@@ -33,7 +33,11 @@
                 <span slot="title">關於我們</span>
               </el-menu-item>
               <el-menu-item index="2">
-                <span slot="title">大樹貝兒的環境</span>
+                <span slot="title">
+                <router-link to="/device">
+                  大樹貝兒的環境
+                </router-link>
+                  </span>
               </el-menu-item>
               <el-menu-item index="3">
                 <span slot="title">大樹貝兒的學習規劃</span>
@@ -104,10 +108,11 @@ export default {
 
 #about-page {
   max-width: 960px;
-  margin: 70px auto;
+  margin: auto;
   padding: 70px auto;
   text-align: left;
   .hgroup {
+    width: 100%;
     margin: 50px 0;
   }
 
